@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indy Eats - Indianapolis Food Fair</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS */
+        .hero-section {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, aquamarine, #7fffd4);
+            border-radius: 20px;
+            margin: 2rem;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+        
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .category-card {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 3px solid transparent;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+            border-color: #20b2aa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>🍽️ Indy Eats</h1>
+            <p class="tagline">Indianapolis Food Fair Experience</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <h2>Discover Indianapolis' Most Popular Cuisines</h2>
+            <p style="font-size: 1.2rem; color: #2c5f2d; margin-top: 1rem;">
+                Explore the top 4 food categories that Hoosiers love most!
+            </p>
+        </section>
+
+        <section class="category-grid">
+            <div class="category-card">
+                <div class="card-icon">🇺🇸</div>
+                <h3>American Cuisine</h3>
+                <p>Classic American favorites including burgers, BBQ, and comfort food that defines the heartland.</p>
+                <a href="american.html" class="category-link">Explore American →</a>
+            </div>
+
+            <div class="category-card">
+                <div class="card-icon">🥢</div>
+                <h3>Chinese Cuisine</h3>
+                <p>Authentic Chinese dishes featuring fresh ingredients, bold flavors, and traditional cooking methods.</p>
+                <a href="chinese.html" class="category-link">Explore Chinese →</a>
+            </div>
+
+            <div class="category-card">
+                <div class="card-icon">🇬🇷</div>
+                <h3>Greek Cuisine</h3>
+                <p>Mediterranean delights with grilled meats, fresh vegetables, and the finest olive oils and spices.</p>
+                <a href="greek.html" class="category-link">Explore Greek →</a>
+            </div>
+
+            <div class="category-card">
+                <div class="card-icon">🇮🇹</div>
+                <h3>Italian Cuisine</h3>
+                <p>Traditional Italian pasta, pizza, and dishes made with love using time-honored family recipes.</p>
+                <a href="italian.html" class="category-link">Explore Italian →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Indy Eats - Indianapolis Food Fair | Bringing the world's flavors to Indiana</p>
+        </div>
+    </footer>
+</body>
+</html>

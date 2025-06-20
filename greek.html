@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greek Cuisine - Indy Eats</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS for Greek page */
+        .cuisine-header {
+            background: linear-gradient(135deg, #0066cc, #ffffff);
+            color: #0066cc;
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 0 0 30px 30px;
+        }
+        
+        .restaurant-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .greek-bg1 { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect fill="%23228b22" width="400" height="300"/><circle fill="%23ffd700" cx="200" cy="150" r="80"/><text x="200" y="160" text-anchor="middle" fill="white" font-size="20">🥙</text></svg>'); }
+        .greek-bg2 { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect fill="%230066cc" width="400" height="300"/><circle fill="%23ffffff" cx="200" cy="150" r="80"/><text x="200" y="160" text-anchor="middle" fill="%230066cc" font-size="20">🍢</text></svg>'); }
+        .greek-bg3 { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect fill="%23008080" width="400" height="300"/><circle fill="%23ffefd5" cx="200" cy="150" r="80"/><text x="200" y="160" text-anchor="middle" fill="%23008080" font-size="20">🧀</text></svg>'); }
+    </style>
+</head>
+<body>
+    <!-- Inline CSS for home button -->
+    <div class="home-button" style="position: fixed; top: 20px; left: 20px; z-index: 1000;">
+        <a href="index.html" style="display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: #32cd32; border-radius: 50%; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
+            <span style="font-size: 24px; color: white;">🏠</span>
+        </a>
+    </div>
+
+    <header class="cuisine-header">
+        <h1>🇬🇷 Greek Cuisine</h1>
+        <p>Mediterranean flavors from the cradle of civilization</p>
+    </header>
+
+    <main>
+        <section class="restaurant-grid">
+            <div class="restaurant-card">
+                <div class="restaurant-image greek-bg1"></div>
+                <div class="restaurant-info">
+                    <h3>Santorini Grill</h3>
+                    <p class="cuisine-type">Traditional Greek Taverna</p>
+                    <p class="description">Authentic Greek dishes prepared with imported olive oil and herbs. Famous for our gyros, moussaka, and fresh seafood specials.</p>
+                    <div class="restaurant-details">
+                        <span class="rating">⭐⭐⭐⭐⭐ 4.9/5</span>
+                        <span class="price-range">$$ - $$$</span>
+                    </div>
+                    <p class="address">📍 Greek Town, Indianapolis</p>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <div class="restaurant-image greek-bg2"></div>
+                <div class="restaurant-info">
+                    <h3>Olympus Souvlaki</h3>
+                    <p class="cuisine-type">Grilled Specialties & Souvlaki</p>
+                    <p class="description">Perfectly grilled meats and vegetables served with traditional Greek sides. Our lamb souvlaki and chicken kebabs are must-tries!</p>
+                    <div class="restaurant-details">
+                        <span class="rating">⭐⭐⭐⭐ 4.6/5</span>
+                        <span class="price-range">$ - $$</span>
+                    </div>
+                    <p class="address">📍 Fountain Square</p>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <div class="restaurant-image greek-bg3"></div>
+                <div class="restaurant-info">
+                    <h3>Aegean Delights</h3>
+                    <p class="cuisine-type">Fresh Seafood & Meze</p>
+                    <p class="description">Fresh Mediterranean seafood and traditional meze platters. Enjoy our selection of Greek wines and ouzo in an authentic atmosphere.</p>
+                    <div class="restaurant-details">
+                        <span class="rating">⭐⭐⭐⭐⭐ 4.7/5</span>
+                        <span class="price-range">$$$ - $$$$</span>
+                    </div>
+                    <p class="address">📍 Downtown Canal Walk</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Indy Eats - Greek Cuisine | Experience the Mediterranean lifestyle</p>
+        </div>
+    </footer>
+</body>
+</html>

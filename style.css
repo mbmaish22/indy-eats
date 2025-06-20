@@ -1,0 +1,229 @@
+/* External CSS - styles.css */
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: aquamarine;
+    background: linear-gradient(135deg, aquamarine 0%, #40e0d0 50%, #48d1cc 100%);
+    min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 25px 25px;
+    margin-bottom: 2rem;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.header-container h1 {
+    font-size: 3rem;
+    color: #2c5f2d;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 1.3rem;
+    color: #20b2aa;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Category Cards */
+.category-link {
+    display: inline-block;
+    background: linear-gradient(135deg, #20b2aa, #48d1cc);
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.category-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #1a9a9a, #40e0d0);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.category-card h3 {
+    color: #2c5f2d;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.category-card p {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* Restaurant Cards */
+.restaurant-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+}
+
+.restaurant-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.restaurant-info {
+    padding: 1.5rem;
+}
+
+.restaurant-info h3 {
+    color: #2c5f2d;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.cuisine-type {
+    color: #20b2aa;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.description {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.restaurant-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.rating {
+    color: #ffa500;
+    font-weight: 600;
+}
+
+.price-range {
+    color: #228b22;
+    font-weight: 600;
+}
+
+.address {
+    color: #666;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: 3rem;
+    border-radius: 25px 25px 0 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    color: #2c5f2d;
+}
+
+/* Home Button Hover Effect */
+.home-button a:hover {
+    transform: scale(1.1) rotate(5deg);
+    background: #228b22 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container h1 {
+        font-size: 2rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+    
+    .category-grid,
+    .restaurant-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .home-button {
+        top: 10px !important;
+        left: 10px !important;
+    }
+    
+    .home-button a {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    
+    .home-button span {
+        font-size: 20px !important;
+    }
+}
+
+/* Animation for page load */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.category-card,
+.restaurant-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.category-card:nth-child(2) { animation-delay: 0.1s; }
+.category-card:nth-child(3) { animation-delay: 0.2s; }
+.category-card:nth-child(4) { animation-delay: 0.3s; }
+
+.restaurant-card:nth-child(2) { animation-delay: 0.1s; }
+.restaurant-card:nth-child(3) { animation-delay: 0.2s; }

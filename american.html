@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Cuisine - Indy Eats</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS for American page */
+        .cuisine-header {
+            background: linear-gradient(135deg, #ff6b6b, #ffa500);
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 0 0 30px 30px;
+        }
+        
+        .restaurant-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .restaurant-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .restaurant-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .restaurant-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .american-bg1 { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect fill="%23d2691e" width="400" height="300"/><circle fill="%23ffd700" cx="200" cy="150" r="80"/><text x="200" y="160" text-anchor="middle" fill="white" font-size="20">🍔</text></svg>'); }
+        .american-bg2 { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect fill="%23cd853f" width="400" height="300"/><circle fill="%23ff4500" cx="200" cy="150" r="80"/><text x="200" y="160" text-anchor="middle" fill="white" font-size="20">🥩</text></svg>'); }
+        .american-bg3 { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect fill="%23daa520" width="400" height="300"/><circle fill="%23ff6347" cx="200" cy="150" r="80"/><text x="200" y="160" text-anchor="middle" fill="white" font-size="20">🌭</text></svg>'); }
+    </style>
+</head>
+<body>
+    <!-- Inline CSS for home button -->
+    <div class="home-button" style="position: fixed; top: 20px; left: 20px; z-index: 1000;">
+        <a href="index.html" style="display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: #32cd32; border-radius: 50%; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
+            <span style="font-size: 24px; color: white;">🏠</span>
+        </a>
+    </div>
+
+    <header class="cuisine-header">
+        <h1>🇺🇸 American Cuisine</h1>
+        <p>Classic American comfort food and BBQ favorites</p>
+    </header>
+
+    <main>
+        <section class="restaurant-grid">
+            <div class="restaurant-card">
+                <div class="restaurant-image american-bg1"></div>
+                <div class="restaurant-info">
+                    <h3>The Burger Joint</h3>
+                    <p class="cuisine-type">Classic American Burgers</p>
+                    <p class="description">Hand-crafted burgers made with locally sourced beef, fresh toppings, and artisan buns. Home of the famous Hoosier Stack!</p>
+                    <div class="restaurant-details">
+                        <span class="rating">⭐⭐⭐⭐⭐ 4.8/5</span>
+                        <span class="price-range">$$ - $$$</span>
+                    </div>
+                    <p class="address">📍 Downtown Indianapolis, Monument Circle</p>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <div class="restaurant-image american-bg2"></div>
+                <div class="restaurant-info">
+                    <h3>Smokehouse BBQ</h3>
+                    <p class="cuisine-type">Traditional BBQ & Steakhouse</p>
+                    <p class="description">Slow-smoked meats with secret dry rubs and house-made sauces. Our brisket and ribs are legendary in central Indiana!</p>
+                    <div class="restaurant-details">
+                        <span class="rating">⭐⭐⭐⭐⭐ 4.9/5</span>
+                        <span class="price-range">$$$ - $$$$</span>
+                    </div>
+                    <p class="address">📍 Broad Ripple, Indianapolis</p>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <div class="restaurant-image american-bg3"></div>
+                <div class="restaurant-info">
+                    <h3>Indy Dogs & More</h3>
+                    <p class="cuisine-type">Gourmet Hot Dogs & American Classics</p>
+                    <p class="description">Creative hot dogs, loaded fries, and American comfort food with a modern twist. Perfect for game day or casual dining!</p>
+                    <div class="restaurant-details">
+                        <span class="rating">⭐⭐⭐⭐ 4.6/5</span>
+                        <span class="price-range">$ - $$</span>
+                    </div>
+                    <p class="address">📍 Mass Ave Cultural District</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Indy Eats - American Cuisine | Taste the heart of America</p>
+        </div>
+    </footer>
+</body>
+</html>

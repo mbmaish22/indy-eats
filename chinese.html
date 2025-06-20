@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Cuisine - Indy Eats</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS for Chinese page */
+        .cuisine-header {
+            background: linear-gradient(135deg, #dc143c, #ffd700);
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+            border-radius: 0 0 30px 30px;
+        }
+        
+        .restaurant-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .chinese-bg1 { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect fill="%23dc143c" width="400" height="300"/><circle fill="%23ffd700" cx="200" cy="150" r="80"/><text x="200" y="160" text-anchor="middle" fill="white" font-size="20">🍜</text></svg>'); }
+        .chinese-bg2 { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect fill="%23ff6347" width="400" height="300"/><circle fill="%23ffa500" cx="200" cy="150" r="80"/><text x="200" y="160" text-anchor="middle" fill="white" font-size="20">🥟</text></svg>'); }
+        .chinese-bg3 { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect fill="%23b22222" width="400" height="300"/><circle fill="%23ffd700" cx="200" cy="150" r="80"/><text x="200" y="160" text-anchor="middle" fill="white" font-size="20">🍲</text></svg>'); }
+    </style>
+</head>
+<body>
+    <!-- Inline CSS for home button -->
+    <div class="home-button" style="position: fixed; top: 20px; left: 20px; z-index: 1000;">
+        <a href="index.html" style="display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; background: #32cd32; border-radius: 50%; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s ease;">
+            <span style="font-size: 24px; color: white;">🏠</span>
+        </a>
+    </div>
+
+    <header class="cuisine-header">
+        <h1>🥢 Chinese Cuisine</h1>
+        <p>Authentic flavors from the Middle Kingdom</p>
+    </header>
+
+    <main>
+        <section class="restaurant-grid">
+            <div class="restaurant-card">
+                <div class="restaurant-image chinese-bg1"></div>
+                <div class="restaurant-info">
+                    <h3>Golden Dragon</h3>
+                    <p class="cuisine-type">Traditional Cantonese & Szechuan</p>
+                    <p class="description">Authentic Chinese dishes prepared by master chefs. Famous for hand-pulled noodles, Peking duck, and spicy Szechuan specialties.</p>
+                    <div class="restaurant-details">
+                        <span class="rating">⭐⭐⭐⭐⭐ 4.7/5</span>
+                        <span class="price-range">$$ - $$$</span>
+                    </div>
+                    <p class="address">📍 Chinatown District, Indianapolis</p>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <div class="restaurant-image chinese-bg2"></div>
+                <div class="restaurant-info">
+                    <h3>Dumpling House</h3>
+                    <p class="cuisine-type">Dim Sum & Dumplings</p>
+                    <p class="description">Handmade dumplings and dim sum served fresh daily. Try our soup dumplings and steamed buns - made the traditional way!</p>
+                    <div class="restaurant-details">
+                        <span class="rating">⭐⭐⭐⭐⭐ 4.8/5</span>
+                        <span class="price-range">$ - $$</span>
+                    </div>
+                    <p class="address">📍 Castleton Square Area</p>
+                </div>
+            </div>
+
+            <div class="restaurant-card">
+                <div class="restaurant-image chinese-bg3"></div>
+                <div class="restaurant-info">
+                    <h3>Wok & Roll</h3>
+                    <p class="cuisine-type">Modern Chinese Fusion</p>
+                    <p class="description">Contemporary Chinese cuisine with a modern twist. Fresh ingredients, bold flavors, and creative presentations in a stylish setting.</p>
+                    <div class="restaurant-details">
+                        <span class="rating">⭐⭐⭐⭐ 4.5/5</span>
+                        <span class="price-range">$$$ - $$$$</span>
+                    </div>
+                    <p class="address">📍 Keystone at the Crossing</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Indy Eats - Chinese Cuisine | Discover authentic Chinese flavors</p>
+        </div>
+    </footer>
+</body>
+</html>
